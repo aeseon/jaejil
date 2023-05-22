@@ -1,0 +1,248 @@
+
+body {
+    font-family: sans-serif;
+    background-color: white;
+    line-height:1.5;
+  }
+.title {
+    font-family: NanumSquareR;
+    font-size: xx-large;
+    line-height: 1.67;
+    text-align: center;
+    color: #35465d;
+  }
+  
+.subtitle {
+    font-family: NanumSquareR;
+    font-size: x-large;
+    line-height: 1.53;
+    text-align: center;
+    color: #35465d;
+}
+.file-upload {
+  background-color: rgba(221, 219, 219, 0.722);
+  width: 100%;
+  margin: 2 auto;
+
+}
+
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #1FB264;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #15824B;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #1AA059;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+  
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 20px;
+  border: 2px dashed #3f3f3f6b;
+  position: relative;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #5e5f5e;
+  border: 2px dashed #ffffff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #5e5f5e;
+  padding: 60px 0;
+}
+
+.file-upload-image {
+  max-height: 60%;
+  max-width: 60%;
+  margin: auto;
+
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.section {
+    margin-top: 100px;
+}
+
+.heartSignal-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(117, 204, 84, 0.2);
+  }
+  .heartSignal-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(117, 204, 84, 1);
+  }
+  .loveCatcher-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(226, 171, 221, 0.2);
+  }
+  .loveCatcher-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgb(204, 84, 152);
+  }
+  .soloInferno-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(27, 175, 234, 0.2);
+  }
+  .soloInferno-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(27, 175, 234, 1);
+  }
+  .EXchange-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(251, 176, 59, 0.2);
+  }
+  .EXchange-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(251, 176, 59, 1);
+  }
+  .percent-text {
+    font-size: 1rem;
+    padding:2.5%;
+    color: #ffffff;
+  }
+  .program-label {
+      width: 20%;
+      text-align: left;
+      height: 2rem;
+  }
+  #label-container {
+      width: 80%;
+      margin: 0 auto;
+  }
+  .result-message {
+      font-size: 2rem;
+  }
+  .bar-container {
+    height: 2.7rem;
+  }
+  .position-relative {
+    position: relative!important;
+  }
+  .d-block {
+    display: block!important;
+}
+.try-again-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #fdbd39;
+    background-color: var(--light-orange);
+    box-shadow: 0 0 4px 0 #2f333a;
+    border: solid 2px rgba(255, 255, 255, 0.4);
+}
+.result{
+    width: 80%;
+    margin:auto;
+}
+.pt-3{
+    padding-top: 10px;
+}
