@@ -5,11 +5,19 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:url" content="https://www.your-domain.com/your-page.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Your Website Title" />
+    <meta property="og:description" content="Your description" />
+    <meta property="og:image" content="https://www.your-domain.com/path/image.jpg" />
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145482737-6"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -21,7 +29,7 @@
     </script>
     <!-- Google Adsense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8155038124255896"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -53,7 +61,11 @@
                     <p class="result-message"></p>
                     <div id="label-container"></div>
                 </div>
-                <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+                <div id="snsButton" class="sns-button">
+                    <button id="btnTwitter" class="link-icon twitter" onclick="javascript:shareTwitter();"> </button>
+                    <button id="btnFacebook" class="link-icon facebook" onclick="javascript:shareFacebook();"> </button>
+                    <button id="btnKakao" class="link-icon kakao" onclick="javascript:shareKakao();"> </button>
+                </div>
                 <div class="pt-3 image-title-wrap">
                     <button type="button p-2" class="try-again-btn" onclick="gaReload1();" data-toggle="modal"
                         data-target="#adModal">
@@ -210,6 +222,36 @@
 
 
             }
+        }
+        function shareTwitter() {
+            var sendText = "연애프로 재질 테스트"; // 전달할 텍스트
+            var sendUrl = "naver.com"; // 전달할 URL
+            window.open("https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl);
+        }
+        function shareFacebook() {
+            var sendText = "연애프로 재질 테스트"; // 전달할 텍스트
+            var sendUrl = "naver.com"; // 전달할 URL
+            window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl, sendText);
+        }
+        function shareKakao() {
+
+            // 사용할 앱의 JavaScript 키 설정
+            Kakao.init('4a0965176581c495174cf453cc55d766');
+
+            // 카카오링크 버튼 생성
+            Kakao.Link.createDefaultButton({
+                container: '#btnKakao', // 카카오공유버튼ID
+                objectType: 'feed',
+                content: {
+                    title: "연애프로 재질 테스트", // 보여질 제목
+                    description: "나는 어떤 연애프로 재질일까", // 보여질 설명
+                    imageUrl: "naver.com", // 콘텐츠 URL
+                    link: {
+                        mobileWebUrl: "naver.com/",
+                        webUrl: "naver.com"
+                    }
+                }
+            });
         }
     </script>
 
