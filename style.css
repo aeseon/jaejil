@@ -240,9 +240,13 @@ body {
     border: solid 2px rgba(255, 255, 255, 0.4);
 }
 .result{
-    width: 80%;
+    padding-top : 20px;
+    width: 70%;
     margin:auto;
 }
 .pt-3{
     padding-top: 10px;
+}
+.selector-for-some-widget {
+  box-sizing: content-box;
 }
