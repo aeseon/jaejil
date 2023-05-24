@@ -40,8 +40,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="index.html">연애프로 재질</a>
-                    <a class="nav-link" href="style.html">헤어스타일 재질</a>
+                    <a class="nav-link" href="index.html">연애프로 재질</a>
+                    <a class="nav-link active" aria-current="page" href="style.html">헤어스타일 재질</a>
                 </div>
             </div>
         </div>
@@ -52,8 +52,8 @@
 
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <section class="section">
-        <h1 class="title">연애프로 재질 TEST</h1>
-        <h2 class="subtitle">당신에게 어울리는 연애프로그램</h2>
+        <h1 class="title">헤어스타일 재질 TEST</h1>
+        <h2 class="subtitle">당신에게 어울리는 헤어스타일</h2>
     </section>
     <div class="file-upload-container">
         <div class="file-upload">
@@ -149,7 +149,7 @@
     </script>
     <script type="text/javascript">
         // the link to your model provided by Teachable Machine export panel
-        const URL = "https://teachablemachine.withgoogle.com/models/GNYNQVIR2/";
+        const URL = "https://teachablemachine.withgoogle.com/models/zeUYKlC6_/";
 
         let model, webcam, labelContainer, maxPredictions;
 
@@ -184,18 +184,13 @@
             var resultMessage;
 
             switch (prediction[0].className) {
-                case "heartSignal":
-                    resultMessage = "당신은 하트시그널 재질"
+                case "shortHair":
+                    resultMessage = "당신은 단발 재질"
                     break;
-                case "loveCatcher":
-                    resultMessage = "당신은 러브캐처 재질"
+                case "longHair":
+                    resultMessage = "당신은 긴머리 재질"
                     break;
-                case "soloInferno":
-                    resultMessage = "당신은 솔로지옥 재질"
-                    break;
-                case "EXchange":
-                    resultMessage = "당신은 환승연애 재질"
-                    break;
+
 
             }
             $('.result-message').html(resultMessage)
@@ -211,22 +206,15 @@
 
                 var labelTitle;
                 switch (prediction[i].className) {
-                    case "heartSignal":
+                    case "shortHair":
 
-                        labelTitle = "하트시그널"
+                        labelTitle = "단발"
                         break;
-                    case "loveCatcher":
+                    case "longHair":
 
-                        labelTitle = "러브캐처"
+                        labelTitle = "긴머리"
                         break;
-                    case "soloInferno":
 
-                        labelTitle = "솔로지옥"
-                        break;
-                    case "EXchange":
-
-                        labelTitle = "환승연애"
-                        break;
                     default:
                         labelTitle = "알수없음"
 

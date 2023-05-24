@@ -90,13 +90,21 @@ body {
 
 .drag-text {
   text-align: center;
+  color: #5e5f5e;
 }
 
 .drag-text h3 {
   font-weight: 100;
   text-transform: uppercase;
   color: #5e5f5e;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 5px;
+}
+.drag-text h5 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #5e5f5e;
+  padding-bottom: 60px;
 }
 
 .file-upload-image {
@@ -194,7 +202,7 @@ body {
   background-color: rgba(27, 175, 234, 1);
 }
 
-.EXchange-box {
+.shortHair-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -204,7 +212,7 @@ body {
   background-color: rgba(251, 176, 59, 0.2);
 }
 
-.EXchange-bar {
+.shortHair-bar {
   position: absolute;
   top: 0;
   left: 0;
@@ -213,6 +221,24 @@ body {
   background-color: rgba(251, 176, 59, 1);
 }
 
+.longHair-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(27, 175, 234, 0.2);
+}
+
+.longHair-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(27, 175, 234, 1);
+}
 .percent-text {
   font-size: 1rem;
   padding: 2.5%;
@@ -231,7 +257,7 @@ body {
 }
 
 .result-message {
-  font-size: 2rem;
+  font-size: x-large;
 }
 
 .bar-container {
